@@ -60,7 +60,7 @@ align-items: center;
     margin-bottom: 2rem;
 }
 
-.advice-line img{
+#destop{
 width: 95%;
 margin-bottom: 2rem;
 }
@@ -80,12 +80,30 @@ margin-bottom: 2rem;
 }
 
 .advice-btn:hover{
-    background-color: hsl(150, 100%, 66%);
-    color: hsl(218, 23%, 16%);
+    box-shadow: 0 0 10px 2px hsl(150, 100%, 66%);
+    cursor: pointer;
 }
 
 .advice-btn img {
     height: 100%;
     width: 100%;
     transform: scale(0.5);
+}
+
+#mobile{
+    display: none;
+}
+
+@media(max-width: 768px){
+.advice-line{
+width: 95%;
+margin-bottom: 2rem;
+display: none;
+}
+
+.mobile{
+    display: block;
+    width: 50%;
+    margin-bottom: 2rem;
+}
 }
